@@ -25,7 +25,7 @@ app.put('/tasks/:id', (req, res) => {
   res.json(tasks.find(t => t.id === id));
 });
 
-// DELETE task
+// DELETE tasks
 app.delete('/tasks/:id', (req, res) => {
   const id = Number(req.params.id);
   tasks = tasks.filter(t => t.id !== id);
